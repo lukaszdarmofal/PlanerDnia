@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanerDnia", "PlanerDnia\PlanerDnia.csproj", "{A61246E6-3B18-4024-92C7-5D841E4C04FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A61246E6-3B18-4024-92C7-5D841E4C04FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61246E6-3B18-4024-92C7-5D841E4C04FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61246E6-3B18-4024-92C7-5D841E4C04FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61246E6-3B18-4024-92C7-5D841E4C04FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
