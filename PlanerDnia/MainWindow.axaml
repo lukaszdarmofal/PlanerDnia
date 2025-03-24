@@ -2,40 +2,55 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        Width="800"
+        Height="600"
+        CanResize="False"
         x:Class="PlanerDnia.MainWindow"
         Title="Bardzo niepraktyczny planer dnia">
         
-        <StackPanel>
+        <StackPanel Background="Bisque">
             
-            <StackPanel x:Name="Panel_TaskAdder" Width="300">
-                <TextBlock 
-                    Text="Nazwa Zadania:"
-                    Margin="10,0"
+            <Border BorderBrush="LightSalmon" BorderThickness="10" Width="300" Margin="5">
+                <StackPanel 
+                    x:Name="Panel_TaskAdder" 
+                    Width="300" 
+                    Background="LightSalmon"
+                >
+                
+                    <TextBlock 
+                        Text="Nazwa Zadania:"
+                        Margin="10,0"
+                        HorizontalAlignment="Center"
                     />
             
-                <TextBox Margin="10"
-                         x:Name="TextBox_TaskName"
+                    <TextBox Margin="10"
+                             x:Name="TextBox_TaskName"
                     />
                 
-                <TextBlock 
-                    Text="Kategoria zadania:"
-                    Margin="10,0"
+                    <TextBlock 
+                        Text="Kategoria zadania:"
+                        Margin="10,0"
+                        HorizontalAlignment="Center"
                     />
                 
-                <ComboBox Margin="10" SelectedIndex="0" x:Name="ComboBox_Category">
-                    <ComboBoxItem Content="Ważne"/>
-                    <ComboBoxItem Content="Priorytetowe"/>
-                    <ComboBoxItem Content="Poboczne"/>
-                </ComboBox>
+                    <ComboBox Margin="10" SelectedIndex="0" x:Name="ComboBox_Category" HorizontalAlignment="Center">
+                        <ComboBoxItem Content="Ważne"/>
+                        <ComboBoxItem Content="Priorytetowe"/>
+                        <ComboBoxItem Content="Poboczne"/>
+                    </ComboBox>
                 
-                <Button
-                    Margin="10,0"
-                    Content="Utwórz zadanie"
-                    Click="CreateTask"
+                    <Button
+                        Margin="10,0"
+                        Content="Utwórz zadanie"
+                        Click="CreateTask"
+                        HorizontalAlignment="Center"
                     />
 
-            </StackPanel>
+                </StackPanel>
+
+            </Border>
+            
             
             <WrapPanel x:Name="Panel_TaskGrid">
                 
